@@ -33,7 +33,7 @@ jobs:
 
           # Validate tag format v[major].[minor].[patch] where all are numbers
           if [[ ! "$TAG_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "❌ Tag format invalid: $TAG_NAME"
+            echo "Tag format invalid: $TAG_NAME"
             exit 0
           fi
 
